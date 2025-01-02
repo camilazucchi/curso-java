@@ -19,6 +19,8 @@ public class DesafioWhile {
             if (nota <= 10 && nota >= 0) {
                 total += nota;
                 quantidadeDeNotas++;
+            } else if (nota != -1) {
+                System.out.println("Nota inválida.");
             }
 
         }
