@@ -1,9 +1,10 @@
 package estruturascontrole.exestruturascontrole;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Exercicio6 {
-    public static void main(String[] args) {
+    public static void main() {
 
         /* Exercício 6: Jogo da adivinhação:
         * Tentar adivinhar um número entre 0 - 100. Armazene um número aleatório em uma variável.
@@ -11,7 +12,8 @@ public class Exercicio6 {
         * imprima a quantidade de tentativas restantes, e imprima se o número inserido é maior
         * ou menor do que o número armazenado. */
 
-        int num = (int) Math.floor(Math.random() * 100);
+        Random randomNumGen = new Random();
+        int num = randomNumGen.nextInt(101);
         int maxAttempts = 10;
         System.out.printf("Cheatzinho: %d%n", num);
         Scanner input = new Scanner(System.in);
@@ -43,8 +45,6 @@ public class Exercicio6 {
             }
 
         }
-
-
 
         input.close();
 
