@@ -4,13 +4,13 @@ public class Produto {
 
     String nome;
     double preco;
-    double desconto;
+    // Desafio: Substituir o atributo 'desconto' para que seja estático
+    static double desconto = 0.25;
 
     // Construtor padrão de forma explícita
-    public Produto(String nome, double preco, double desconto) {
+    public Produto(String nome, double preco) {
         this.nome = nome;
         this.preco = preco;
-        this.desconto = desconto;
     }
 
     double precoComDesconto() {
